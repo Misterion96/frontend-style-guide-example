@@ -1,0 +1,16 @@
+{
+  "name": "@my-team/commitlint-config",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@commitlint/cli": ">=13.1.0",
+    "@commitlint/config-conventional": ">=13.1.0"
+  },
+  "main": "base.js",
+  "exports": {
+    ".": "./base.js",
+    "./nx": "./nx.js"
+  },
+  "optionalDependencies": {
+    "nx": ">=14.0.0 <=^17.0.0"
+  }
+}

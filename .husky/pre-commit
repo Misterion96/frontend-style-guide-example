@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run lint-staged --quiet --diff-filter A --diff master --config ./.lintstagedrc.strict.js
+npm run lint-staged --quiet --diff-filter M --diff master --config ./.lintstagedrc.js
+
