@@ -2,12 +2,14 @@
     "name": "example-angular-app",
     "version": "0.0.0",
     "scripts": {
+        "lint-staged": "lint-staged",
+        "lint-staged:strict": "npm run lint-staged -c ./.lintstagedrc.adapted.js --quiet --diff-filter M --diff master",
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "lint": "TIMING=10 eslint -c ../.eslintrc.js ./src/**/*",
-        "lint:strict": "eslint -c ../.eslintrc.strict.js ./src/**/*",
+        "lint:strict": "eslint -c ../.eslintrc.adapted.js ./src/**/*",
         "prettier:check": "prettier -c --config .esl.js ./"
     },
     "private": true,

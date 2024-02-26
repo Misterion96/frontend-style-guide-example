@@ -1,6 +1,6 @@
 module.exports = {
     '*.{js,ts,html}': [
-        'eslint --quiet --fix --config ./.eslintrc.strict.js',
+        'eslint --fix --config ./.eslintrc.adapted.js',
     ],
     '*.{json,scss,md}': [
         'prettier --write',

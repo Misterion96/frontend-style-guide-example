@@ -5,10 +5,8 @@
     "scripts": {
         "lint-staged": "lint-staged",
         "postinstall": "husky install",
-        "lint": "TIMING=10 eslint -c .eslintrc.js ./example-angular-app/src/**/*",
-        "lint:strict": "eslint -c .eslintrc.strict.js ./example-angular-app/src/**/*",
-        "lint:ci-1": "TIMING=10 eslint -c .eslintrc.ci.js ./example-angular-app/src/**/*",
-        "lint:ci-2": "TIMING=10 CI=true eslint -c .eslintrc.js ./example-angular-app/src/**/*",
+        "lint": "eslint -c .eslintrc.js ./example-angular-app/src/**/*",
+        "lint:temp": "eslint -c .eslintrc.adapted.js ./example-angular-app/src/**/*",
         "prettier:check": "prettier -c --config ./example-angular-app/.prettierrc.js ./example-angular-app/"
     },
     "devDependencies": {
