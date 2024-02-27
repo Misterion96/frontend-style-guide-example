@@ -1,13 +1,7 @@
-const isCI = process.env.CI;
-const offRules = isCI ? { 'prettier/prettier': 'off' } : {};
-
 module.exports = {
     root: true,
     plugins: ['@my-team'],
-    extends: ['plugin:@my-team/recommended'],
-    rules: {
-        ...offRules,
-    },
+    extends: ['plugin:@my-team/strict'],
     overrides: [
         {
             files: ['*.ts'],

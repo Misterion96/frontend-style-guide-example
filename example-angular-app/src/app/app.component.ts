@@ -13,4 +13,6 @@ export class AppComponent {
     public someChange: EventEmitter<void> = new EventEmitter<void>();
 
     test(): any {}
+
+    test2(): any {}
 }
