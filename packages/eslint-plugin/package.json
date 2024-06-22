@@ -1,34 +1,40 @@
 {
-  "version": "0.0.1",
-  "description": "team rules for all projects",
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin"
-  ],
-  "name": "@my-team/eslint-plugin",
-  "author": "my-team",
-  "main": "index.js",
-  "exports": {
-    ".": "./index.js",
-    "./plugins/": "./plugins/"
-  },
-  "peerDependencies": {
-    "@angular-eslint/builder": ">=16.2.0",
-    "@angular-eslint/eslint-plugin": ">=16.2.0",
-    "@angular-eslint/eslint-plugin-template": ">=16.2.0",
-    "@angular-eslint/template-parser": ">=16.2.0",
-    "@typescript-eslint/eslint-plugin": ">=5.48.2",
-    "@typescript-eslint/parser": ">=5.55.0",
-    "eslint-config-prettier": ">=8.7.0",
-    "eslint-plugin-prettier": ">=4.2.1",
-    "eslint": ">=8.49.0",
-    "eslint-plugin-rxjs": "^5.0.2"
-  },
-  "dependencies": {
-    "requireindex": "^1.2.0"
-  },
-  "engines": {
-    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
-  }
+    "version": "0.0.1",
+    "description": "team rules for all projects",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
+    "scripts": {
+        "test": "eslint-summary"
+    },
+    "name": "@my-team/eslint-plugin",
+    "author": "my-team",
+    "main": "index.js",
+    "exports": {
+        ".": "./index.js",
+        "./plugins/": "./plugins/"
+    },
+    "peerDependencies": {
+        "@angular-eslint/builder": ">=16.2.0",
+        "@angular-eslint/eslint-plugin": ">=16.2.0",
+        "@angular-eslint/eslint-plugin-template": ">=16.2.0",
+        "@angular-eslint/template-parser": ">=16.2.0",
+        "@typescript-eslint/eslint-plugin": ">=5.48.2",
+        "@typescript-eslint/parser": ">=5.55.0",
+        "eslint-config-prettier": ">=8.7.0",
+        "eslint-plugin-prettier": ">=4.2.1",
+        "eslint": ">=8.49.0",
+        "eslint-plugin-rxjs": "^5.0.2"
+    },
+    "dependencies": {
+        "requireindex": "^1.2.0"
+    },
+    "devDependencies": {
+        "@dolgikh-maks/eslint-summary": "0.0.3-alpha"
+    },
+    "engines": {
+        "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+    }
 }
